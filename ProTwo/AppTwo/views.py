@@ -9,3 +9,7 @@ def index(request):
 
 def home(request):
     return HttpResponse('home view')
+
+def title(request):
+    return HttpResponse('<em> ProTwo App </em>')
+    
