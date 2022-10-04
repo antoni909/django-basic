@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    </head>
+    <body>
+        <h1> Pages View </h1>
+        <h2> Level Two </h2>
+
+        <h3> Pages: </h3>
+
+            {% if pages %} 
+            <table align="center" style="border:1px solid black;margin-left:auto;margin-right:auto;">
+                <thead>
+                    <th>Page Name</th>
+                    <th>Permalink </th>
+                    <th>Update Date</th>
+                    <th>Body Text</th>
+                </thead>
+                {% for p in pages  %}
+                <tr>
+                    <td>{{ p.title }}</td>
+                    <td>{{ p.permalink }}</td>
+                    <td>{{ p.update_date }}</td>
+                    <td>{{ p.bodytext }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% else %}
+            <p> No Pages Found </p>
+            {% endif %}
+
+
+    </body>
+</html>

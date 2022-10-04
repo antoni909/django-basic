@@ -4,15 +4,21 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home Page</title>
+        <title>Django ProTwo</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     </head>
     <body>
+        <h1> Welcome! </h1>
         
-        <h1> AppTwo Home View </h1>
-        <p> {{insert_me}} </p>
+        <h2> AppTwo Home View </h2>
+        
+        <h2> Go to /users to see the list of User information</h2>
+        <h2> Go to /pages to see a table of Pages information</h2>
+        <h2> Go to /help to see help information</h2>
+
+        <h3> A Static Image </h3>
         <section>
             <img src="{% static 'images/computer_pic.jpg' %}" alt="computer image" >
         </section>
