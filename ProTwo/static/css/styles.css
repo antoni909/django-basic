@@ -1,12 +1,20 @@
 body{
     background-color: aliceblue;
     text-align: center;
-}
-img {
-    width: 600px;
-    height: 600px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+img{
+    width: 600px;
+    height: 600px;
+}
+
+table {
+    margin: 0 auto;
+    color: red;
+    border:1px solid black;
+    /* margin-left:auto; */
+    /* margin-right:auto; */
 }

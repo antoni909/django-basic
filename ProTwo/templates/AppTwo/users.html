@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Users Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    </head>
+    <body>
+        <h1> Users View </h1>
+        <h2> Level Two </h2>
+
+        <h3> Users: </h3>
+            {% if users %} 
+                    {% for person in users  %}
+                    User: {{person.lastN}}
+                        <p>name: {{person.firstN}},{{person.lastN}}</p>
+                        <p>email: {{person.email}}</p>   
+                    {% endfor %}
+            {% else %} <p> No Pages Found </p>
+            {% endif %}
+
+    </body>
+</html>
